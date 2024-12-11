@@ -1,6 +1,6 @@
-#**Caida libre** y **Tiro Vertical**
+**Caida libre** y **Tiro Vertical**
 
-##**Alumno:** Salvador Romero - 2213238
+**Alumno:** Salvador Romero - 2213238
 
 **Link de la pagina** https://ucc-labcompu2.github.io/proyecto2024-romero-figueroa/
 
