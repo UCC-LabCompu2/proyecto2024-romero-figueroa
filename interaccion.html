@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caída Libre y Tiro Vertical</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" href="./images/icon.ico" type="image/x-icon">
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Simulación</h1>
+        <div class="box">
+            <nav>
+                <button id="volver" onclick="Inicio()">Volver</button>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <div class="interact">
+        <div class="box sideways">
+            <div>
+                <p>Ingrese Altura inicial y Velocidad inicial</p>
+                <form id="formulario">
+                    <label for="height">Altura inicial:</label>
+                    <input type="number" id="height" name="Altura" class="obligatorio" placeholder="Altura" min="0" max="50" required>
+                    <br>
+                    <label for="vel0">Velocidad inicial:</label>
+                    <input type="number" id="vel0" name="Velocidad" class="obligatorio" placeholder="Velocidad inicial" min="-50" max="50" required>
+                    <br><br>
+                    <input type="submit" id="submit-button" value="Enviar" onclick="calculo(event)">
+                    <input type="reset" id="resetear" value="Borrar">
+                </form>    
+            </div>
+            <div>
+                <canvas id="simulationCanvas" width="600" height="400"></canvas>
+            </div>
+            <div id="resultado"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>
+            El uso de el calculador es completamente Libre, tanto para estudiantes, profesores o terceros.
+        </p>
+    </footer>
+</body>
+<script src="javascript.js"></script>
+</html>
